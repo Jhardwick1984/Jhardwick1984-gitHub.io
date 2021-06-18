@@ -1,0 +1,158 @@
+html { 
+    background: url(/images/page-background.jpg) no-repeat center center scroll; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-width: 290px;
+  }
+
+  .body {
+
+}
+
+
+.header {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: -10px;
+}
+
+.header ul {
+    float: right;
+    margin: 0;
+}
+
+.header ul li {
+    display: inline;
+    margin: 0;
+  }
+
+.header a{
+    color: white;
+    display: inline-block;
+    padding: 0px 30px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: large;
+    margin: auto; 
+}
+
+.nav-list a:hover {
+    color: blue;
+}
+
+.nav-link {
+    
+    color: white;
+    margin: 0 3rem;
+}
+
+.project-grid{
+    display: flex;
+    border: 10px;
+    background-clip: padding-box;
+    margin-bottom: 6rem; 
+    justify-content: space-evenly;
+}
+
+.projects-section{
+    width: 900px;
+    text-align: center;
+    background-color: rgb(59, 57, 57);
+    border-radius: 20px 35px 35px 20px;
+    margin-top: 200px;
+    margin-left: 130px;
+    
+}
+
+   
+.project-text {
+    border: 10px;
+    margin-top: 60px;
+    margin-bottom: -20px;
+    color: white;
+}
+
+.welcome-section {
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   flex-direction: row;
+    margin-top: 100px;
+    margin-left: -150px;
+}
+
+.welcome-text {
+    font-size: 20px;
+    padding-left: 20px;
+    color: white;
+    border: 10px;
+    background-color: rgb(59, 57, 57);
+    border-radius: 35px 35px 35px 35px;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: center;   
+}
+
+.skill-text {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(59, 57, 57);
+    color: white;
+    margin-left: -250px;
+    margin-top: 100px;
+    border-radius: 20px 35px 35px 20px;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(59, 57, 57);
+    border-radius: 20px 35px 35px 20px;
+    margin-top: 10px;
+    margin-left: 130px;
+    color: black;
+    width: 900px;
+}
+
+.contact-head {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.contact-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;   
+}
+
+
+.footer {
+    text-align: center;
+    color: black;
+    width: 900px;
+    margin-left: 140px;
+    height: auto;
+}
+
+@media screen and (max-width: 100%) {
+    .body {
+        display: block;
+    }
+}
