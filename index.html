@@ -6,82 +6,133 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Personal Portfolio</title>
+    <title>Josh Hardwick Portfolio</title>
 </head>
-<div class="body">
-    <div class="header">
-        <nav id="navbar" class="nav"></nav>
-        <li class="page-logo"><img src="./images/alt-cover.png"></li>
+
+<body>
+    <div class="container">
+    <header class ="header" id="header">
+        <nav class="nav-bar">
+            <div>
+        <li class="page-logo"><img src="./images/cover.png"></li>
+        </div>
+        <div>
         <ul class="nav-list">
-            <li>
-                <a class="nav-link" href="#welcome-section">About</a>
-            </li>
-            <li>
-                <a class="nav-link" href="#skill-list">Skills</a>
-            </li>
-            <li>
-                <a class="nav-link" href="#projects-section">Projects</a>
-            </li>
-            <li>
-                <a class="nav-link" href="#contact-section">Contact</a>
-            </li>
+            <li><a class="nav-link" href="#skill-list">Skills</a></li>
+            <li><a class="nav-link" href="#projects-section">Projects</a></li>
+            <li><a class="nav-link" href="#contact-items">Contact</a></li>
         </ul>
-    </div>
-    <div class="welcome-section" id="welcome-section">
-        <div class="welcome-text">
-            <p>I am a student at WCCI, hoping to break into web-design
-                <br> or software development. Please look below for some
-                <br> of my projects, the skills I have gained, and a few ways
-                <br> to contact me. Or try the links above!
-            </p>
         </div>
-    </div>
-    <div class="skill-list" id="skill-list">
-        <div class="skill-text">
-            <h2>List of Skills:</h2>
-            <p>Java, CSS, HTML, use of Git, GitHub, IntelliJ and VSCode. (More to come!)</p>
+        </nav>
+    </header>
+
+    <div class="left-sidebar">
+        <div class="welcome-section" id="welcome-section">
+            <img src="images/headshot copy.jpg">
+            <button class="myBtn" id="myBtn">Click to Learn About Me</button>
         </div>
-    </div>
-    <section id="projects-section" class="projects-section">
-        <div class="project-text">
-            <h2>My Projects (so far):</h2>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>About Me</h2>
         </div>
-        <div class="project-grid">
-            <a href="https://github.com/2021-Summer-Cohort/virtual-pet-codeheads" target="_blank" class="project-tile">
-                <img class="project-image" src="/images/Virtual Pet.png" width="200px">
-                <article class="project-title">
-                    <button type="button">Virtual Pet</button>
-                </article>
-            </a>
-            <a href="https://github.com/2021-Summer-Cohort/virtual-pet-codeheads" target="_blank" class="project-tile">
-                <img class="project-image" src="/images/VP Shelter.png" width="150px">
-                <article class="project-title">
-                    <button type="button">Virtual Pet Shelter</button>
-                </article>
-            </a>
-            <a href="https://github.com/2021-Spring-Cohort/virtual-pet-codeheads" target="_blank" class="project-tile">
-                <img class="project-image" src="/images/VP Amok.png" width="200px">
-                <article class="project-title">
-                    <button type="button">Virtual Pets Amok!</button>
-                </article>
-            </a>
+            <div class="modal-body">
+            <p>A junior developer, and recent graduate from We Can Code It.</p>
+            <p>I hope to put my skills to use building cool software, and learning so much more about software development.</p>
+            </div>
+                    <div class="modal-footer">
+                    <h3>Thank you for reading!</h3>
+                    </div>
+            </div>
         </div>
-    </section>
-    <br>
-    <div class="contact-section" id="contact-section">
-        <div class="contact-head" id="contact-head">
-            <h2>Points of Contact:</h2>
+</div>
+
+    <main class="main-content">
+        <div class="flip-card1">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                       <img src="/images/Virtual Pet.png" height="200px" width="200px" alt="image">
+                </div>
+                <div class="flip-card-back">
+                    <a href="https://github.com/2021-Summer-Cohort/virtual-pet-codeheads" target="_blank">
+                    <h1>Virtual Pet</h1>
+                    <p>The first group project done at WCCI.</p>
+                    <p>We utilized basic Java to create a pet management console game.</p>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="contact-text">
-            <a href="mailto:Jhardwick1984@hotmail.com"><img src="/images/Gmail-icon.png"></a>
-            <a href="https://github.com/Jhardwick1984"><img src="/images/GitHub_Logo.png" width="100px"></a>
-            <a href="https://www.linkedin.com/in/josh-hardwick-048703214/"><img src="/images/LI-In-Bug.png"></a>
-            <a href="https://app.joinhandshake.com/users/32020946"><img src="/images/new-handshake-logo.png"></a>
+        <div class="flip-card2">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                       <img src="/images/VP Shelter.png" height="200px" width="200px" alt="image">
+                </div>
+                <div class="flip-card-back">
+                    <a href="https://github.com/2021-Summer-Cohort/virtual-pet-codeheads" target="_blank">
+                    <h1>Virtual Pet Shelter</h1>
+                    <p>We utilized basic Java to create a pet management console game.</p>
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
-    <br>
-    <div class="footer">
+        <div class="flip-card3">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                       <img src="/images/VP Amok.png" height="200px" width="200px" alt="image">
+                </div>
+                <div class="flip-card-back">
+                    <a href="https://github.com/2021-Summer-Cohort/virtual-pet-codeheads" target="_blank">
+                    <h1>Virtual Pet Shelter</h1>
+                    <p>We utilized basic Java to create a pet management console game.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="right-sidebar">
+        <div class="skill-list" id="skill-list">
+            <img src="images/Javalogo.jpeg">
+            <button class="myBtn" id="myBtn">Click to see my Skill Set</button>
+        </div>
+        <div id="myModal2" class="modal">
+            <div class="modal2-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Skill Set</h2>
+        </div>
+            <div class="modal-body">
+            <p>Java with SpingBoot, HTML, CSS, JavaScript, JSON, Thymeleaf</p>
+            <p>I have also learned: Git/GitHub, Agile workflow, and usage of APIs.</p>
+            </div>
+                    <div class="modal-footer">
+                    <h3>Thank you for reading!</h3>
+                    </div>
+            </div>
+        </div>
+</div>
+    
+    <footer class="footer">
+        <div>
         <p>Josh Hardwick 2021</p>
+        </div>
+
+        <nav class="nav-bar">
+            <ul class="contact-items" id="contact-items">
+                <a href="mailto:Jhardwick1984@hotmail.com"><img src="/images/Gmail-icon.png"></a>
+                <a href="https://github.com/Jhardwick1984"><img src="/images/GitHub_Logo.png" width="100px"></a>
+                <a href="https://www.linkedin.com/in/josh-hardwick1984/"><img src="/images/LI-In-Bug.png"></a>
+                <a href="https://app.joinhandshake.com/users/32020946"><img src="/images/new-handshake-logo.png"></a>
+            </ul>
+        </nav>
+        <div class="footer-spacer">
+            <p></p>
+        </div>
+
         </footer>
+        <script src="js/modal.js"></script>
     </div>
+</body>
+
 </html>
