@@ -77,14 +77,14 @@ html {
 .left-sidebar {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    background: rgb(218, 35, 104);
+    background: #1550669a;
     border-radius: 4px;
   }
 
   .right-sidebar {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
-    background: rgb(218, 35, 104);
+    background: #1550669a;
     border-radius: 4px;
   }
 
@@ -134,16 +134,17 @@ html {
   .main-content {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    background: rgb(242, 103, 34);
+    /* background: rgb(242, 103, 34); */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items:flex-start;
     justify-content: space-evenly;
     border-radius: 4px;
+    background: url(/images/page-background.jpg) no-repeat center center scroll; 
   }
 
-  .flip-card1,.flip-card2,.flip-card3,.flip-card4 {
+  .flip-card1,.flip-card2,.flip-card3,.flip-card4,.flip-card5,.flip-card6 {
       background-color: transparent;
       width: 200px;
       height: 200px;
@@ -158,6 +159,7 @@ html {
       text-align: center;
       transition: transform 0.8s;
       transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,1);
   }
 
   .flip-card1:hover .flip-card-inner {
@@ -169,6 +171,18 @@ html {
   }
 
   .flip-card3:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card4:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card5:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card6:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
 
@@ -195,12 +209,12 @@ html {
     padding: 10px 25px;
     grid-column: 1 / 4;
     grid-row: 3 / 4;
-    background: rgb(66, 159, 216);
+    background: #1550669a;
     text-align: center;
     border-radius: 4px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-evenly;
   }
   
@@ -219,4 +233,6 @@ html {
     display: inline-block;
     font-size: 20px;
     cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,1);
+    margin-left: 25px;
   }
